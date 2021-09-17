@@ -1,22 +1,5 @@
 console.log("It Works!");
 
-/*function changeName( event ){
-    let userName = document.querySelector('.name');
-    userName.addEventListener('input', nameInput);
-    function nameInput(element){
-        console.log(element.value);
-        userName.innerText = element.value;
-    }   
-console.log(event);
-}    
-
-
-let profileName = document.querySelector('.editName');
-console.log(profileName);
-
-profileName.addEventListener( 'click', changeName );*/
-
-
 function deleteProfile (event){
     console.log(event.target);
     let entireElement = event.target.closest ('li');
@@ -66,3 +49,36 @@ function addNumber (event){
 for (let i = 0; i < accept.length; i++ ){
     accept[i].addEventListener("click", addNumber);
 }
+
+/*function changeName( event ){
+    let userName = document.querySelector('.name');
+    userName.addEventListener('input', nameInput);
+    function nameInput(element){
+        console.log(element.value);
+        userName.innerText = element.value;
+    }   
+console.log(event);
+}    
+
+
+let profileName = document.querySelector('.editName');
+console.log(profileName);
+
+profileName.addEventListener( 'click', changeName );*/
+
+let nameUser = document.querySelector('.name');
+console.log(nameUser);
+
+function changeName(event){
+    if (nameUser.innerText === "Jane Doe"){
+        nameUser.innerText = "Pepita Pérez"
+    }
+    else{
+        nameUser.innerText = "Jane Doe"
+    }
+}
+
+let profileName = document.querySelector('.editName');
+console.log(profileName);
+
+profileName.addEventListener( 'click', changeName );
