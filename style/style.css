@@ -143,6 +143,8 @@ h1{
 .img_profile > img{
     width: 110px;
     border-radius: 70px;
+    background-color: white;
+    padding: 5px;
 }
 
 a{
